@@ -4,7 +4,6 @@ Este projeto é um sistema de gerenciamento de consultas em clínica odontológi
 
 ## Tecnologias utilizadas
   - Java JDK 8 ou superior
-  - Spring Framework
   - MySQL 5.6 ou superior
   - HTML, CSS e JavaScript
   - GlassFish Server
