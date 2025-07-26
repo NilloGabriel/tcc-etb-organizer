@@ -22,34 +22,42 @@ Este projeto é um sistema de gerenciamento de consultas em clínica odontológi
   ```
 
   2. Configure o banco de dados MySQL:
-    - Crie um banco de dados com o script disponível no arquivo [database/odonto.sql](https://github.com/NilloGabriel/tcc-etb-organizer/tree/main/database).
-    - Configure a conexão com o banco de dados MySQL, substituindo os valores das propriedades `url`, `user` e `pass` no arquivo [src/java/modelo/DataBaseDAO](https://github.com/NilloGabriel/tcc-etb-organizer/blob/main/src/java/modelo/DataBaseDAO.java).
+  
+  - Crie um banco de dados com o script disponível no arquivo [database/odonto.sql](https://github.com/NilloGabriel/tcc-etb-organizer/tree/main/database).
+    
+  - Configure a conexão com o banco de dados MySQL, substituindo os valores das propriedades `url`, `user` e `pass` no arquivo [src/java/modelo/DataBaseDAO](https://github.com/NilloGabriel/tcc-etb-organizer/blob/main/src/java/modelo/DataBaseDAO.java).
 
   3. Baixe as dependências necessárias em formato JAR:
-    - Baixe o arquivo JAR correspondente à versão do MySQL Connector/J que você está usando.
-    - Baixe o arquivo JAR correspondente à versão do GlassFish Server que você está usando.
+  - Baixe o arquivo JAR correspondente à versão do MySQL Connector/J que você está usando.
+  - Baixe o arquivo JAR correspondente à versão do GlassFish Server que você está usando.
 
   4. Crie uma pasta chamada "lib" na raíz do projeto e adicione as dependências na pasta.
 
   5. Compile e empacote a aplicação:
-    - Compile a aplicação executando o comando:
-      ```bash
-      javac -cp "src/java:lib/*" -d target/classes src/java/*.java
-      ```
-    - Crie um arquivo `clinica_odonto.war` executando o comando:
-      ```bash
-      jar -cvf clinica-odonto.war -C target/classes/ .
-      ```
+  
+  - Compile a aplicação executando o comando:
+    
+    ```bash
+    javac -cp "src/java:lib/*" -d target/classes src/java/*.java
+    ```
+      
+  - Crie um arquivo `clinica_odonto.war` executando o comando:
+    
+    ```bash
+    jar -cvf clinica-odonto.war -C target/classes/ .
+    ```
   6. Copie o arquivo `clinica-odonto.war`gerado para a pasta `autodeploy`do diretório do GlassFish Server.
 
   7. Inicie o GlassFish Server.
-    - Na pasta `bin` do diretório do GlassFish Server, execute o comando:
-      ```bash
-      asadmin start-domain
-      ```
+  
+  - Na pasta `bin` do diretório do GlassFish Server, execute o comando:
+    
+    ```bash
+    asadmin start-domain
+    ```
     
   8. Acesse a aplicação:
-    - Abra o navegador e acesse `http://localhost:8080/clinica-odonto`.
+  - Abra o navegador e acesse `http://localhost:8080/clinica-odonto`.
 
 ## Integrantes:
   Gabriel D'Nillo <br />
