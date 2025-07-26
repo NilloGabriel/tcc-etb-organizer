@@ -3,8 +3,8 @@
 Sistema de agendamento para uma clínica odontológica utilizando java web sem as facilidades de um framework.
 
 ## Integrantes:
-  Gabriel D'Nillo
-  Adriel Oliveira
-  Luiz Filipe
-  Mateus Vieira
-  Samuel Finch
+  Gabriel D'Nillo <br />
+  Adriel Oliveira <br />
+  Luiz Filipe <br />
+  Mateus Vieira <br />
+  Samuel Finch <br />
